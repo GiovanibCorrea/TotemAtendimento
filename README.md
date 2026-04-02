@@ -1,6 +1,6 @@
-# Totem Santa Casa de Curitiba
+# Totem Atendimento
 
-Sistema de autoatendimento para o ambulatório Dom Eurico da Santa Casa de Curitiba.
+Sistema de autoatendimento para o serviços hospitalares.
 Desenvolvido em C# WinForms (.NET 8).
 
 ## Estrutura do Projeto
