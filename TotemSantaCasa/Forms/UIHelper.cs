@@ -1,21 +1,23 @@
+using TotemSantaCasa.Services;
+
 namespace TotemSantaCasa.Forms
 {
     public static class UIHelper
     {
-        public static readonly Color CorPrimaria = Color.FromArgb(180, 30, 30);
-        public static readonly Color CorSecundaria = Color.FromArgb(220, 60, 60);
-        public static readonly Color CorBotaoVerde = Color.FromArgb(34, 139, 34);
-        public static readonly Color CorFundo = Color.White;
-        public static readonly Color CorTexto = Color.FromArgb(30, 30, 30);
-        public static readonly Color CorCinzaClaro = Color.FromArgb(245, 245, 245);
-        public static readonly Color CorCinzaBorda = Color.FromArgb(200, 200, 200);
+        public static Color CorPrimaria => UITheme.Primaria;
+        public static Color CorSecundaria => UITheme.Secundaria;
+        public static Color CorBotaoVerde => UITheme.BotaoConfirmar;
+        public static Color CorFundo => UITheme.Fundo;
+        public static Color CorTexto => UITheme.Texto;
+        public static Color CorCinzaClaro => UITheme.CinzaClaro;
+        public static Color CorCinzaBorda => UITheme.CinzaBorda;
 
         public static Button CriarBotaoGrande(string texto, Color corFundo, EventHandler? onClick = null)
         {
             var btn = new Button
             {
                 Text = texto,
-                Font = new Font("Segoe UI", 18, FontStyle.Bold),
+                Font = UITheme.FonteBotao(),
                 ForeColor = Color.White,
                 BackColor = corFundo,
                 FlatStyle = FlatStyle.Flat,
@@ -27,10 +29,7 @@ namespace TotemSantaCasa.Forms
             btn.FlatAppearance.BorderSize = 0;
             btn.FlatAppearance.MouseOverBackColor = ControlPaint.Light(corFundo, 0.2f);
             btn.FlatAppearance.MouseDownBackColor = ControlPaint.Dark(corFundo, 0.1f);
-
-            if (onClick != null)
-                btn.Click += onClick;
-
+            if (onClick != null) btn.Click += onClick;
             return btn;
         }
 
@@ -39,7 +38,7 @@ namespace TotemSantaCasa.Forms
             var btn = new Button
             {
                 Text = texto,
-                Font = new Font("Segoe UI", 13, FontStyle.Bold),
+                Font = new Font(UITheme.FamiliaFonte, 13, FontStyle.Bold),
                 ForeColor = Color.White,
                 BackColor = corFundo,
                 FlatStyle = FlatStyle.Flat,
@@ -50,10 +49,7 @@ namespace TotemSantaCasa.Forms
             };
             btn.FlatAppearance.BorderSize = 0;
             btn.FlatAppearance.MouseOverBackColor = ControlPaint.Light(corFundo, 0.2f);
-
-            if (onClick != null)
-                btn.Click += onClick;
-
+            if (onClick != null) btn.Click += onClick;
             return btn;
         }
 
@@ -63,8 +59,8 @@ namespace TotemSantaCasa.Forms
             return new Label
             {
                 Text = texto,
-                Font = new Font("Segoe UI", tamanhoFonte, estilo),
-                ForeColor = cor ?? CorTexto,
+                Font = new Font(UITheme.FamiliaFonte, tamanhoFonte, estilo),
+                ForeColor = cor ?? UITheme.Texto,
                 BackColor = Color.Transparent,
                 AutoSize = false,
                 TextAlign = alinhamento
@@ -75,7 +71,7 @@ namespace TotemSantaCasa.Forms
         {
             var panel = new Panel
             {
-                BackColor = CorPrimaria,
+                BackColor = UITheme.Cabecalho,
                 Height = 100,
                 Dock = DockStyle.Top
             };
@@ -83,8 +79,8 @@ namespace TotemSantaCasa.Forms
             var lblTitulo = new Label
             {
                 Text = titulo,
-                Font = new Font("Segoe UI", 22, FontStyle.Bold),
-                ForeColor = Color.White,
+                Font = UITheme.FonteCabecalho(),
+                ForeColor = UITheme.CabecalhoTexto,
                 BackColor = Color.Transparent,
                 AutoSize = false,
                 TextAlign = ContentAlignment.MiddleCenter,
@@ -96,14 +92,14 @@ namespace TotemSantaCasa.Forms
                 lblTitulo.TextAlign = ContentAlignment.BottomCenter;
                 lblTitulo.Dock = DockStyle.None;
                 lblTitulo.Location = new Point(0, 15);
-                lblTitulo.Size = new Size(panel.Width, 45);
                 lblTitulo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
 
                 var lblSub = new Label
                 {
                     Text = subtitulo,
-                    Font = new Font("Segoe UI", 13),
-                    ForeColor = Color.FromArgb(255, 200, 200),
+                    Font = new Font(UITheme.FamiliaFonte, 13),
+                    ForeColor = Color.FromArgb(220, UITheme.CabecalhoTexto.R,
+                        UITheme.CabecalhoTexto.G, UITheme.CabecalhoTexto.B),
                     BackColor = Color.Transparent,
                     AutoSize = false,
                     TextAlign = ContentAlignment.TopCenter,
@@ -129,7 +125,7 @@ namespace TotemSantaCasa.Forms
             var lblRodape = new Label
             {
                 Text = $"Santa Casa de Curitiba  •  {Config.Configuracoes.Ambulatorio}  •  {DateTime.Now:dd/MM/yyyy}",
-                Font = new Font("Segoe UI", 9),
+                Font = new Font(UITheme.FamiliaFonte, 9),
                 ForeColor = Color.Gray,
                 BackColor = Color.Transparent,
                 Dock = DockStyle.Fill,

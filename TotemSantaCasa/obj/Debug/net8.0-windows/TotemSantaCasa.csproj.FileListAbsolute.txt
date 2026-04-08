@@ -1,8 +1,3 @@
-C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.csproj.AssemblyReference.cache
-C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.AssemblyInfoInputs.cache
-C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.AssemblyInfo.cs
-C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.csproj.CoreCompileInputs.cache
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net8.0-windows\TotemSantaCasa.exe
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net8.0-windows\TotemSantaCasa.deps.json
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net8.0-windows\TotemSantaCasa.runtimeconfig.json
@@ -17,6 +12,13 @@ C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.csproj.AssemblyReference.cache
+C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.AssemblyInfoInputs.cache
+C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.AssemblyInfo.cs
+C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.csproj.CoreCompileInputs.cache
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSan.4652B522.Up2Date
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\TotemSantaCasa.dll
 C:\Users\Digitaly\Documents\Projects\TotemSantaCasa\TotemSantaCasa\obj\Debug\net8.0-windows\refint\TotemSantaCasa.dll
